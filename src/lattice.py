@@ -31,10 +31,10 @@ EXPIRY_OFFSET_SECONDS = 10
 
 
 class Lattice:
-    def __init__(self, logger: Logger, lattice_ip: str, bearer_token: str):
+    def __init__(self, logger: Logger, lattice_ip: str, bearer_token: str, sandbox_token: str):
         self.logger = logger
         self.lattice_ip = lattice_ip
-        self.generated_metadata = {"authorization": "Bearer " + bearer_token}
+        self.generated_metadata = {"authorization": "Bearer " + bearer_token, "anduril-sandbox-authorization": "Bearer " + sandbox_token }
 
     async def get_entity(self, entity_id) -> Optional[GetEntityResponse]:
         """
