@@ -43,7 +43,7 @@ cd sample-app-ais-integration-grpc
     ```
 * If you are using a Lattice Sandbox also add your sandboxes portal token
     ```
-    sandbox-token: $YOUR_SANDBOX_TOKEN
+    sandbox-token: <YOUR_SANDBOX_TOKEN>
     ```
 
 * If you would like, you can also modify:
