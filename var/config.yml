@@ -1,13 +1,20 @@
 # lattice dns/ip
-lattice-ip: $YOUR_LATTICE_URL
-# lattice-bearer-token
-lattice-bearer-token: $YOUR_BEARER_TOKEN
+lattice-ip: lattice-19f7f.env.sandboxes.developer.anduril.com
+
+# sandbox bearer token 
+sandbox-token: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NTUwODk0MjAsImlzcyI6ImFuZHVyaWwiLCJqdGkiOiJiMjE3MTA0YS04YWJhLTRlMWMtYTdhOC0xNzZhOGI2NTZmYzUiLCJuYmYiOjE3NDczMTM0MTAsInN1YiI6InVzZXIvMGZjNWNjMjEtMjc1YS00N2E0LTgyMjEtNjE4MjE3Y2M2ZDI5In0.PFoHPwLmekTZwuUc5DZq9C3zzSzdcKkaPyd6NmGI7cQ
+
+# lattice bearer token
+lattice-bearer-token: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NTYwMjczNTQsImlzcyI6ImFuZHVyaWwiLCJqdGkiOiIxMDBjY2M0NS05NjMwLTQ2ZGYtODRlYy0yOTJkNWRjNTlkNGMiLCJuYmYiOjE3NDczODczNDQsInN1YiI6InVzZXIvNmFmMjk3MmMtYzczMS00M2MxLTlhY2QtYTY0MzdjMzg2ZTAzIn0.UkF5k7VoKtsQgPXFEqdrwrDia9RmFIrw7IFfOWhYIaM
+
 # entity update frequency (seconds)
 entity-update-rate-seconds: 1
+
 # vessels to track
 vessel-mmsi:
-    - 730156067 # RM SEA TROUT
-    - 368179250 # SEAHAWK
-    - 368138010 # NEW YORK
+  - 730156067  # RM SEA TROUT
+  - 368179250  # SEAHAWK
+  - 368138010  # NEW YORK
+
 # vessel data generation time interval (seconds)
 ais-generate-interval-seconds: 1
